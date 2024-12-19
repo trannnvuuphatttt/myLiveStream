@@ -1,0 +1,7 @@
+{
+  "name": "myLiveStream",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}
