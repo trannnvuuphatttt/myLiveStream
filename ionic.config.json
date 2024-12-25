@@ -3,5 +3,10 @@
   "integrations": {
     "capacitor": {}
   },
-  "type": "vue-vite"
+  "type": "vue-vite",
+  "proxy": {
+    "/authentication": {
+      "target": "http://localhost:3000"
+    }
+  }
 }

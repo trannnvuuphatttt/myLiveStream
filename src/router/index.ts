@@ -1,17 +1,27 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router';
 import { RouteRecordRaw } from 'vue-router';
 import HomePage from '../views/HomePage.vue'
+//import OnBoading from '../views/OnBoading.vue';
+import Sighin from '../views/SighIn.vue';
+
 
 const routes: Array<RouteRecordRaw> = [
+  // {
+  //   path: '/onboading',
+  //   name : 'OnBoading',
+  //   component: OnBoading
+  // },
   {
     path: '/',
-    redirect: '/home'
+    name: 'Sigh_In',
+    component: Sighin
   },
   {
-    path: '/home',
-    name: 'Home',
-    component: HomePage
-  }
+    path:'/home',
+    name :'Home',
+    component:HomePage
+  },
+   
 ]
 
 const router = createRouter({
